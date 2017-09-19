@@ -243,6 +243,8 @@ final public class IGPRequest : GeneratedMessage {
 }
 
 extension IGPRequest: GeneratedMessageProtocol {
+    public typealias BuilderType = IGPRequest.Builder
+    
     public class func parseArrayDelimitedFrom(inputStream: InputStream) throws -> Array<IGPRequest> {
         var mergedArray = Array<IGPRequest>()
         while let value = try parseDelimitedFrom(inputStream: inputStream) {
